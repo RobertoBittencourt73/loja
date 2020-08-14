@@ -89,6 +89,24 @@ aside{
     transition: all .3s;
     z-index: 1;
 }
+section{
+    width: 90%;
+    height: 600px;
+}
+#cadUser{
+    width: 90%;
+    height: 550px;
+    margin: 10px 5%;
+    display: none;
+    border: 1px solid;
+}
+#cadProds{
+    width: 90%;
+    height: 550px;
+    margin: 10px 5%;
+    display: none;
+    border: 1px solid;
+}
 
 
 

@@ -22,3 +22,17 @@ function moveCaixa(){
 function fechaCaixa() {
     document.getElementById("navCaixa").style.marginLeft = "-280px";    
 }
+function cadUser() {
+    document.getElementById("cadUser").style.display = "block"; 
+    document.getElementById("cadProds").style.display = "none";    
+}
+function fechaUser() {
+    document.getElementById("cadUser").style.display = "none";    
+}
+function cadProds() {
+    document.getElementById("cadProds").style.display = "block"; 
+    document.getElementById("cadUser").style.display = "none";     
+}
+function fechaProds() {
+    document.getElementById("cadProds").style.display = "none";    
+}

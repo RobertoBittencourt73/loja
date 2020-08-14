@@ -16,7 +16,8 @@
                 <span>Cadastro</span>
             </div>
             <div id="navCadastro" onmouseover='moveCadastro()' onmouseout="fechaCadastro()">
-                     
+                  <button onclick="cadUser()">Usuários</button>   
+                  <button onclick="cadProds()">Produtos</button> 
             </div>
             <div class="imgs" onmouseover='moveRelatorio()' onmouseout="fechaRelatorio()">
                 <button><img src="/img/relatorio.png" alt="icone Relatorio"></button>
@@ -34,6 +35,14 @@
             </div>
         </aside>
         <section>
+            <div id="cadUser">
+                <button onclick="fechaUser()">X</button>
+                usuarios
+            </div>
+            <div id="cadProds">
+                <button onclick="fechaProds()">X</button>
+                Produtos
+            </div>
 
         </section>
     </div>    
