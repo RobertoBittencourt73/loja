@@ -23,7 +23,7 @@ function fechaCaixa() {
     document.getElementById("navCaixa").style.marginLeft = "-280px";    
 }
 function cadUser() {
-    document.getElementById("cadUser").style.display = "block"; 
+    document.getElementById("cadUser").style.display = "flex"; 
     document.getElementById("cadProds").style.display = "none";    
 }
 function fechaUser() {
