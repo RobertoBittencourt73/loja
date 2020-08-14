@@ -8,6 +8,8 @@ const app = express()
 app.engine('handlebars', handlebars({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
 app.use('/css', express.static('css'))
+app.use('/img', express.static('img'))
+app.use('/js', express.static('js'))
 
 app.get('/', function(req,res){
     res.render('index')
