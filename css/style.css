@@ -97,7 +97,7 @@ section{
     width: 100%;
     height: 600px;
     margin: 0;
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -107,29 +107,83 @@ section{
     margin: 10px;
     border: 1px solid;
 }
-#foto{
+
+#fotoUser{
     width: 23%;
     height: 300px;
     margin: 10px 10px;
     float: left;
+    display: flex;
+    flex-direction: column;
 }
+#fotoUser > button{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+#imgUser{
+     width: 100%;
+     margin: 0;
+     height: 270px;
+     background: darkslategrey;
+}
+
 #dados{
-    width: 60%;
+    width: 45%;
+    height: 100px;
+    float: left;
+    margin: 10px 10px 0 0;
+}
+#nomeUser{
+    width: 96%;
+    height: 25px;
+    margin: 5px 2%;
+}
+.docs{
+    width: 30%;
+    height: 25px;
+    margin: 5px 0 0 2%;
+}
+#senha{
+    width: 11%;
+    height: 100px;
+    float: left;
+    margin: 10px 1% 0 0;
+}
+.senhas{
+    width: 94%;
+    height: 25px;
+    margin: 5px 3%;
+}
+#idade{
+    width: 9%;
     height: 100px;
     float: left;
     margin: 10px 0;
 }
-#idade{
-    width: 12.6%;
-    height: 100px;
+#dtCadUser{
+    width: 90%;
+    height: 25px;
+    margin: 5px 5%;
     float: left;
-    margin: 10px 10px;
+}
+.idadeUser{
+    width: 55%;
+    height: 25px;
+    margin: 5px 2%;
+    float: left;
+}
+.p{
+    margin-top: 10px;
 }
 #sexo{
     width: 13%;
     height: 100px;
     float: left;
-    margin: 0 0 10px;
+    margin: ;
+}
+.sexo{
+    margin: 10px 5%;
 }
 #endereco{
     width: 59.6%;
@@ -137,11 +191,41 @@ section{
     float: left;
     margin: 0 1%;
 }
+.log{
+    width: 27.7%;
+    height: 25px;
+    margin: 5px 0 0 1%;
+}
+.log1{
+    width: 85%;
+    height: 25px;
+    margin: 5px 1%;
+}
+.log2{
+    width: 10%;
+    height: 25px;
+    margin: 5px 1%;
+}
+.log3{
+    width: 9%;
+    height: 25px;
+    margin: 5px 1%;
+}
 #contato{
     width: 74%;
     height: 100px;
     float: left;
     margin: 10px 0;
+}
+.cont{
+    width: 30.2%;
+    height: 25px;
+    margin: 5px 0 0 2%;
+}
+.cont1{
+    width: 96%;
+    height: 25px;
+    margin: 5px 2%;
 }
 #info{
     width: 23%;
@@ -151,9 +235,13 @@ section{
 }
 #obs{
     width: 74%;
-    height: 100px;
+    height: 130px;
     float: left;
     margin: 0;
+}
+#obsUser{
+    width: 100%;
+    height: 110px;
 }
 #buscUser{
     width: 20%;
