@@ -36,3 +36,8 @@ function cadProds() {
 function fechaProds() {
     document.getElementById("cadProds").style.display = "none";    
 }
+function liberarInputs() {
+    alert('teste')
+    document.getElementById("nomeUser").readOnly = true;
+    
+}

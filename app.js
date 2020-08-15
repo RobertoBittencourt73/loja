@@ -17,6 +17,9 @@ app.get('/', function(req,res){
 app.get('/home', function(req,res){
     res.render('home')
 })
+app.post('/salvaruser', function(req, res){
+    
+})
 
 
 app.listen('8081', function(req,res){

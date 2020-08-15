@@ -180,7 +180,7 @@ section{
     width: 13%;
     height: 100px;
     float: left;
-    margin: ;
+
 }
 .sexo{
     margin: 10px 5%;
@@ -242,6 +242,18 @@ section{
 #obsUser{
     width: 100%;
     height: 110px;
+}
+#btnsUser{
+    float: left;
+    width: 73%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#btnsUser > img{
+    height:  50%;
 }
 #buscUser{
     width: 20%;
