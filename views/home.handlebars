@@ -45,45 +45,45 @@
                         <button>Capturar</button>
                     </fieldset>
                     <fieldset id='dados'><legend>Principal</legend>
-                        <input type="text" name='nome' id='nomeUser' placeholder="Nome Completo">
-                        <input type="text" name='rg'   id='rgUser'   class='docs' placeholder="Seu Rg">
-                        <input type="text" name='cpf'  id='cpfUser'  class='docs' placeholder="Seu Cpf">
-                        <input type="text" name='ctps'  id='ctpsUser'  class='docs' placeholder="Sua Ctps">
+                        <input type="text" name='nome' id='nomeUser' placeholder="Nome Completo" readonly/>
+                        <input type="text" name='rg'   id='rgUser'   class='docs' placeholder="Seu Rg" readonly/>
+                        <input type="text" name='cpf'  id='cpfUser'  class='docs' placeholder="Seu Cpf" readonly/>
+                        <input type="text" name='ctps'  id='ctpsUser'  class='docs' placeholder="Sua Ctps" readonly/>
                     </fieldset>
                     <fieldset id='senha'><legend>Senha</legend>
-                      <input type="password" name='senha' id='senhaUser' class='senhas' placeholder="Senha">
-                      <input type="password" name='confSenha' id='confSenhaUser' class='senhas' placeholder="Confirmar Senha">
+                      <input type="password" name='senha' id='senhaUser' class='senhas' placeholder="Senha" readonly/>
+                      <input type="password" name='confSenha' id='confSenhaUser' class='senhas' placeholder="Confirmar Senha" readonly/>
                     </fieldset>
                     <fieldset id='idade'><legend>Idade</legend>
                         <input type="date" name='dtCadUser' id='dtCadUser'>
-                        <input type="text" readonly class='idadeUser'><p class='p'>Anos</p>
+                        <input type="text" readonly class='idadeUser' readonly><p class='p'>Anos</p>
                     </fieldset>
                     <fieldset id='sexo'><legend>Sexo</legend>
-                           <input type="radio" name='sexo' class='sexo' value='Masculino'>Masculino
-                           <input type="radio" name='sexo' class='sexo' value='Feminino'>Feminino
+                           <input type="radio" name='sexo' class='sexo' value='Masculino' readonly>Masculino
+                           <input type="radio" name='sexo' class='sexo' value='Feminino' readonly>Feminino
                     </fieldset>
                     <fieldset id='endereco'><legend>Endereço</legend>
-                          <input type="text" name='endereco' id='enderecoUser'  class='log1' placeholder="Endereço">
-                          <input type="text" name='num'  id='numUser'  class='log2' placeholder="Numero">
-                          <input type="text" name='comp'  id='compUser'  class='log' placeholder="Complemento">
-                          <input type="text" name='bairro'  id='bairroUser'  class='log' placeholder="Bairro">
-                          <input type="text" name='cidade'  id='cidadeUser'  class='log' placeholder="Cidade">
-                          <input type="text" name='uf'  id='ufUser'  class='log3' placeholder="Uf">                          
+                          <input type="text" name='endereco' id='enderecoUser'  class='log1' placeholder="Endereço" readonly>
+                          <input type="text" name='num'  id='numUser'  class='log2' placeholder="Numero" readonly>
+                          <input type="text" name='comp'  id='compUser'  class='log' placeholder="Complemento" readonly/>
+                          <input type="text" name='bairro'  id='bairroUser'  class='log' placeholder="Bairro" readonly/>
+                          <input type="text" name='cidade'  id='cidadeUser'  class='log' placeholder="Cidade" readonly/>
+                          <input type="text" name='uf'  id='ufUser'  class='log3' placeholder="Uf" readonly/>                          
                     </fieldset>
                     <fieldset id='contato'><legend>Contato</legend>
-                           <input type="text" name='tel'  id='telUser'  class='cont' placeholder="Telefone">
-                          <input type="text" name='cel'  id='celUser'  class='cont' placeholder="Celular">
-                          <input type="text" name='whats'  id='whatsUser'  class='cont' placeholder="Whatsapp">
-                          <input type="text" name='email'  id='emailUser'  class='cont1' placeholder="Email">
+                           <input type="text" name='tel'  id='telUser'  class='cont' placeholder="Telefone" readonly/>
+                          <input type="text" name='cel'  id='celUser'  class='cont' placeholder="Celular" readonly/>
+                          <input type="text" name='whats'  id='whatsUser'  class='cont' placeholder="Whatsapp" readonly/>
+                          <input type="text" name='email'  id='emailUser'  class='cont1' placeholder="Email" readonly/>
                     </fieldset>
                     <fieldset id='info'>
 
                     </fieldset>
                     <fieldset id='obs'><legend>Observações</legend>
-                        <textarea name='obs' id='obsUser'></textarea>
+                        <textarea name='obs' id='obsUser' readonly></textarea>
                     </fieldset>
                     <div id="btnsUser">
-                       <button type="button" onclick="liberarInputs()"><img src="/img/novo.png" alt="Novo Cadastro" title="Novo Cadastro"></button>
+                       <button type="button" onclick="novo(false)"><img src="/img/novo.png" alt="Salvar Cadastro" title="Novo Cadastro"></button>
                         <button type="submit"><img src="/img/salvar.png" alt="Salvar Cadastro" title="Salvar Cadastro"></button>
                         <img src="/img/atualizar.png" alt="Atualizar Cadastro" title="Atualizar Cadastro">
                         <img src="/img/primeiro.png" alt="Primeiro Cadastro" title="Primeiro Cadastro">
