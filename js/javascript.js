@@ -38,14 +38,14 @@ function fechaProds() {
 }
 function novo(bool){
     var input = document.getElementsByTagName('input');
-    var input = document.getElementsByTagName('textarea');
+    var textarea = document.getElementsByTagName('textarea');
     for( var i=0; i<=(input.length-1); i++ )
 	{
 		if( input[i].type!='button' ) 
 			input[i].readOnly = bool;
     }
-   /* for( var i=0; i<=(textarea.length-1); i++ )
+   for( var i=0; i<=(textarea.length-1); i++ )
 	{
 		textarea[i].readOnly = bool;
-	}*/
+	}
 }
