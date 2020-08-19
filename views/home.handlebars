@@ -37,7 +37,7 @@
         </aside>
         <section>
             <div id="cadUser">
-                <form id="formUser" action="salvarUser" method='post'>
+                <form id="formUser" action="/home" method='post'>
                     <fieldset id='fotoUser'>
                         <div id="imgUser">
 
@@ -55,7 +55,7 @@
                       <input type="password" name='confSenha' id='confSenhaUser' class='senhas' placeholder="Confirmar Senha" readonly/>
                     </fieldset>
                     <fieldset id='idade'><legend>Idade</legend>
-                        <input type="date" name='dtCadUser' id='dtCadUser'>
+                        <input type="date" name='dtNasc' id='dtNasc'>
                         <input type="text" readonly class='idadeUser' readonly><p class='p'>Anos</p>
                     </fieldset>
                     <fieldset id='sexo'><legend>Sexo</legend>
@@ -83,7 +83,7 @@
                         <textarea name='obs' id='obsUser' readonly></textarea>
                     </fieldset>
                     <div id="btnsUser">
-                       <button type="button" onclick="novo(false)"><img src="/img/novo.png" alt="Salvar Cadastro" title="Novo Cadastro"></button>
+                       <button type="button" onclick="confirmaNovo()"><img src="/img/novo.png" alt="Novo Cadastro" title="Novo Cadastro"></button>
                         <button type="submit"><img src="/img/salvar.png" alt="Salvar Cadastro" title="Salvar Cadastro"></button>
                         <img src="/img/atualizar.png" alt="Atualizar Cadastro" title="Atualizar Cadastro">
                         <img src="/img/primeiro.png" alt="Primeiro Cadastro" title="Primeiro Cadastro">
@@ -105,6 +105,14 @@
             <div id="cadProds">
                 <button onclick="fechaProds()">X</button>
                 Produtos
+            </div>
+            <div id='novoUsuario'>
+                <h1>Novo Usuário</h1>
+                <p>Você tem certeza que deseja cadastrar um novo usuário? </p>
+                <div id="btnsNovo">
+                    <button type="button" onclick="novo(false)">Cadastrar</button>
+                    <button type="button" onclick="fecharNovo()">Cancela</button>
+                </div>
             </div>
 
         </section>

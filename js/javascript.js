@@ -36,6 +36,12 @@ function cadProds() {
 function fechaProds() {
     document.getElementById("cadProds").style.display = "none";    
 }
+function confirmaNovo() {
+    document.getElementById("novoUsuario").style.display = "flex";    
+}
+function fecharNovo() {
+    document.getElementById("novoUsuario").style.display = "none";    
+}
 function novo(bool){
     var input = document.getElementsByTagName('input');
     var textarea = document.getElementsByTagName('textarea');
@@ -47,5 +53,6 @@ function novo(bool){
    for( var i=0; i<=(textarea.length-1); i++ )
 	{
 		textarea[i].readOnly = bool;
-	}
+    }
+    document.getElementById("novoUsuario").style.display = "none";  
 }
