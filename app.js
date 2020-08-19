@@ -26,8 +26,10 @@ app.get('/home', function(req,res){
 })
 app.post('/home',urlParser, function(req, res){
    if(req.body.nome == '' || req.body.cpf == '' || req.body.senha == '' || req.body.confSenha == '' || req.body.dtNasc==''){
-          res.send('Os campos Nome, Cpf, Senha, Confirmar Senha e Data de Nascimento são obrigatórios')
-   }else{
+         
+            res.send('<h1>Error</h1><h2>Os campos Nome, Cpf, Senha, Confirmar Senha e Data de Nascimento são obrigatórios</h2>')
+
+          }else{
        if(req.body.senha === req.body.confSenha){
             sql.query('insert into usuario values(default,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',[req.body.nome, req.body.rg, req.body.cpf, req.body.ctps, req.body.senha, req.body.dtNasc, req.body.sexo, req.body.endereco, req.body.num, req.body.comp, req.body.bairro, req.body.cidade, req.body.uf, req.body.tel, req.body.cel, req.body.whats, req.body.email, req.body.obs, 18/08/2020, 18/08/2020 ])
 
